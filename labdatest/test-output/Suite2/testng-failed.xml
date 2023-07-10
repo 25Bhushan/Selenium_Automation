@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite2]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="EdgeTest(failed)">
+    <parameter name="browserName" value="Edge"/>
+    <classes>
+      <class name="lambdatest.SignUpPage">
+        <methods>
+          <include name="RelaunchBrowser"/>
+          <include name="fullNameTextfeild"/>
+          <include name="ragistrationPage"/>
+          <include name="openBrowser"/>
+          <include name="businessEmailTextFeild"/>
+          <include name="setup"/>
+          <include name="desiredPasswordTextfeild"/>
+          <include name="phoneTextfeild"/>
+          <include name="checkTermAndServices"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- lambdatest.SignUpPage -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+  <test thread-count="3" parallel="tests" name="FirefoxTest(failed)">
+    <parameter name="browserName" value="Firefox"/>
+    <classes>
+      <class name="lambdatest.SignUpPage">
+        <methods>
+          <include name="RelaunchBrowser"/>
+          <include name="fullNameTextfeild"/>
+          <include name="ragistrationPage"/>
+          <include name="openBrowser"/>
+          <include name="businessEmailTextFeild"/>
+          <include name="setup"/>
+          <include name="phoneTextfeild"/>
+          <include name="desiredPasswordTextfeild"/>
+          <include name="checkTermAndServices"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- lambdatest.SignUpPage -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite2] -->
